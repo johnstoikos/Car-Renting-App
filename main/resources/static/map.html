@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ενοικίαση Αυτοκινήτων</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <link rel="icon" href="data:,">
+  <style>
+    .map-container {
+      width: 80%;
+      height: 500px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    #map {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Αρχική</a></li>
+            <li><a href="cars.html">Αυτοκίνητα</a></li>
+            <li><a href="rentals.html">Ενοικιάσεις</a></li>
+            <li><a href="reviews.html">Αξιολογήσεις</a></li>
+            <li><a href="owners.html">Ιδιοκτήτες</a></li>
+            <li><a href="renters.html">Ενοικιαστές</a></li>
+            <li><a href="map.html" class="active">Χάρτης</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Διαθέσιμα Αυτοκίνητα στο Χάρτη</h1>
+    <div class="map-container">
+      <div id="map"></div>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script type="module" src="js/map.js"></script>
+</body>
+</html>

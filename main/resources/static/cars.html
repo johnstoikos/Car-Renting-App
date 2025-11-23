@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ενοικίαση Αυτοκινήτων</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Αρχική</a></li>
+            <li><a href="cars.html" class="active">Αυτοκίνητα</a></li>
+            <li><a href="rentals.html">Ενοικιάσεις</a></li>
+            <li><a href="reviews.html">Αξιολογήσεις</a></li>
+            <li><a href="owners.html">Ιδιοκτήτες</a></li>
+            <li><a href="renters.html">Ενοικιαστές</a></li>
+            <li><a href="map.html">Χάρτης</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Προσθήκη Αυτοκινήτου</h1>
+        <form id="addCarForm">
+            <input type="text" id="carModel" placeholder="Μοντέλο" required>
+            <input type="number" id="carYear" placeholder="Έτος" required>
+            <input type="number" id="carCC" placeholder="Κυβισμός" required>
+            <input type="number" id="carPrice" placeholder="Τιμή ανά Ημέρα" required step="0.01">
+            <input type="text" id="carAddress" placeholder="Διέυθυνση" required>
+            <input type="number" id="carOwnerId" placeholder="ID Ιδιοκτήτη" required>
+            <button type="submit">Προσθήκη</button>
+        </form>
+        <h2>Αυτοκίνητα</h2>
+
+        <table id="carsTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Μοντέλο</th>
+                    <th>Έτος</th>
+                    <th>Κυβισμός</th>
+                    <th>Τιμή/Ημέρα</th>
+                    <th>Διέυθυνση</th>
+                    <th>Ιδιοκτήτης</th>
+                    <th>Ενέργειες</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        
+
+    </main>
+
+    <script type="module" src="js/cars.js"></script>
+</body>
+</html>

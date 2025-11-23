@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ενοικίαση Αυτοκινήτων</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Αρχική</a></li>
+            <li><a href="cars.html">Αυτοκίνητα</a></li>
+            <li><a href="rentals.html">Ενοικιάσεις</a></li>
+            <li><a href="reviews.html"  class="active">Αξιολογήσεις</a></li>
+            <li><a href="owners.html">Ιδιοκτήτες</a></li>
+            <li><a href="renters.html">Ενοικιαστές</a></li>
+            <li><a href="map.html">Χάρτης</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+
+        <h1>Προσθήκη Αξιολόγησης</h1>
+        <form id="addReviewForm">
+            <input type="number" id="reviewerId" placeholder="ID Αξιολογητή" required>
+            <input type="number" id="revieweeId" placeholder="ID Αξιολογούμενου" required>
+            <input type="number" id="rating" placeholder="Βαθμολογία (1-5)" min="1" max="5" required>
+            <textarea id="comment" placeholder="Σχόλιο" required></textarea>
+            <button type="submit">Προσθήκη</button>
+        </form>
+    </main>
+
+        <h2>Reviews</h2>
+
+        <table id="reviewsTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Αξιολογητής</th>
+                    <th>Αξιολογούμενος</th>
+                    <th>Βαθμολογία</th>
+                    <th>Σχόλιο</th>
+                    <th>Ενέργειες</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        
+
+    <script type="module" src="js/reviews.js"></script>
+</body>
+</html>

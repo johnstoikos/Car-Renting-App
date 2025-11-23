@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ενοικίαση Αυτοκινήτων</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <!-- Οριζόντια μπάρα -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Αρχική</a></li>
+            <li><a href="cars.html">Αυτοκίνητα</a></li>
+            <li><a href="rentals.html">Ενοικιάσεις</a></li>
+            <li><a href="reviews.html">Αξιολογήσεις</a></li>
+            <li><a href="owners.html" class="active">Ιδιοκτήτες</a></li>
+            <li><a href="renters.html">Ενοικιαστές</a></li>
+            <li><a href="map.html">Χάρτης</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Προσθήκη Ιδιοκτήτη</h1>
+        <form id="addOwnerForm">
+            <input type="text" id="ownerName" placeholder="Όνομα" required>
+            <input type="email" id="ownerEmail" placeholder="Email" required>
+            <input type="password" id="ownerPassword" placeholder="Κωδικός" required>
+            <button type="submit">Προσθήκη</button>
+        </form>
+        <h2>Ιδιοκτήτες</h2>
+
+        <table id="ownersTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Όνομα</th>
+                    <th>Email</th>
+                    <th>Ενέργειες</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        
+
+        <div id="editModal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <h2>Edit Owner</h2>
+                <form id="editOwnerForm">
+                    <input type="hidden" id="editOwnerId">
+                    <input type="text" id="editOwnerName" placeholder="Name" required>
+                    <input type="email" id="editOwnerEmail" placeholder="Email" required>
+                    <input type="password" id="editOwnerPassword" placeholder="Password" required>
+                    <button type="submit">Save</button>
+                    <button type="button" onclick="closeModal()">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="js/owners.js"></script>
+</body>
+</html>

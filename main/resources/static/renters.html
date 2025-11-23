@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ενοικίαση Αυτοκινήτων</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Αρχική</a></li>
+            <li><a href="cars.html">Αυτοκίνητα</a></li>
+            <li><a href="rentals.html">Ενοικιάσεις</a></li>
+            <li><a href="reviews.html">Αξιολογήσεις</a></li>
+            <li><a href="owners.html">Ιδιοκτήτες</a></li>
+            <li><a href="renters.html" class="active">Ενοικιαστές</a></li>
+            <li><a href="map.html">Χάρτης</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Προσθήκη Ενοικιαστή</h1>
+        <form id="addRenterForm">
+            <input type="text" id="renterName" placeholder="Όνομα" required>
+            <input type="email" id="renterEmail" placeholder="Email" required>
+            <input type="password" id="renterPassword" placeholder="Κωδικός" required>
+            <button type="submit">Προσθήκη</button>
+        </form>
+
+        <h2>Ενοικιαστές</h2>
+
+        <table id="rentersTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Όνομα</th>
+                    <th>Email</th>
+                    <th>Ενέργειες</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+    </main>
+
+    <script type="module" src="js/renters.js"></script>
+</body>
+</html>
